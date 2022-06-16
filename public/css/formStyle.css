@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inside-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 7px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h4 {
+    background-color: orange;
+    padding: 10px;
+    margin-top: 20px;
+}

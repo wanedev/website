@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/formStyle.css">
+    <title>Join</title>
+</head>
+<body>
+   <main>
+    <%- include('./partials/header') %>
+  
+      
+                <section class="inside-container">
+                <h1>Creative space.</h1>
+                <h3>Where dreams do or do not come true. A tailored specific conversation.</h3>
+                <h4>Login</h4>
+                <input type="text" id="name" name="username" placeholder="Enter username...">
+                <textarea id="thoughts" name="thoughts" placeholder="What are your thoughts..?"></textarea>
+                <input type="text" id="solution" name="solution" placeholder="Enter a possible solution">
+                <button id="btn postBtn" class="postBtn">Post</button>
+           
+    <%- include('./partials/footer') %>
+</section>
+</main>
+</body>
+<script src="/public/javascript/logic.js"></script>
+</html>

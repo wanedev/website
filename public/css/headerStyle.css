@@ -1,0 +1,150 @@
+/* Add a black background color to the top navigation */
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+.main-nav {
+  background-color: #009688;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  width: 100%;
+}
+.main-nav__btn {
+  background: transparent;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: white;
+}
+.main-nav-drawer {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.nav-drawer__list {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  width: 225px;
+  background: white;
+  height: 100vh;
+}
+
+
+
+.nav-drawer__item {
+  margin: 0.5rem 0;
+}
+
+.main-nav-drawer__close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  z-index: 200;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.bi-x-lg, .bi-list{
+  display: none;
+}
+
+
+
+.open-drawer {
+  display: block;
+  z-index: 100;
+  background: rgba(0,0,0, 0.4);
+}
+
+.joinBtn, .loginBtn {
+  padding: 5px 12px;
+  background-color: rgb(160, 31, 110);
+  color: whitesmoke;
+  border: none;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+.joinBtn:hover {
+ color: rgb(5, 3, 107);
+ cursor: pointer;
+}
+.loginBtn:hover {
+ color: rgb(5, 3, 107);
+ cursor: pointer;
+}
+
+.loginBtn {
+  margin-left: 50px;
+}
+
+.right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-solid {
+  color: rgb(170, 194, 134);
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+  .main-nav-drawer {
+      display: block;
+      position: static;
+      height: auto;
+      width: auto;
+      margin-left: auto;
+  }
+  .nav-drawer__list {
+      position: static;
+      height: auto;
+      width: max-content;
+      background: inherit;
+      padding: 0;
+  }
+
+}
+
+@media (min-width: 600px) {
+  .nav-drawer__list {
+      display: flex;
+      flex-direction: row;
+  }
+  .nav-drawer__item {
+      margin: 0.5rem 0.5rem;
+  }
+}
+
+@media (max-width:610px) {
+  .bi-list {
+    display: block;
+  }
+}
