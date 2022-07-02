@@ -9,7 +9,7 @@ const contactRoute = require('./routes/contact')
 const joinRoute = require('./routes/join')
 
 
-//testing ssh none related to this project
+
 app.use(express.urlencoded({extended:false}));
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
